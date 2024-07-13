@@ -1,0 +1,22 @@
+1) Function: Block of code that performs tasks. Types of function are void function (which doesnt return any value) and function which returns value.
+2) Class: A blueprint to create object. It can have variable, methods. 
+* Variables inside the clss are called Instance variables. 	
+3) Object : Instance of class
+
+> Algorithms: set of instructions or rules designed to solve a definite problem. 
+> api:  set of rules and protocols that allows different software applications to communicate and interact with each other. By using APIs, developers can integrate different software systems, build new applications on top of existing ones, or extend the functionality of an existing application.
+> Web application: Services offered over internet 
+> Parameter is variable defined in function declaration. Argument is the actual value of this variable that get passed to the function.
+> The class is just a blueprint for reference. It just defines the methods and variables.It doesn’t actually run/implement them. For that an object is required.
+> A constant (also known as Const) is a term used to describe a value that does not change throughout the execution of the program, unlike a variable.
+> groups of similar types of data values that are grouped. All values in the array are of the same data type and are only differentiated by their position in the array.
+> A statement that describes a variable, function or any other identifier is called a declaration.
+> Compiler:  translates the entire source code of a program into a machine code or bytecode executable file before its execution.
+> Interprter: executes the program directly from the source code line by line, without the need for prior translation into an executable file. It reads and interprets each statement of the source code and executes the corresponding instructions. In practice, some programming languages use a combination of both approaches. For example, Java uses a compiler to generate bytecode, which is then interpreted by the Java Virtual Machine (JVM) or just-in-time (JIT) compiled for improved performance.
+> Bytecode is computer object code that an interpreter converts into binary machine code so it can be read by a computer's hardware processor.
+> Expressions: An expression is a legal grouping of letters, symbols, and numbers being used to represent the value of one or more variables. 
+> Frameworks: Is a reusable set of tools, libraries, and components that provide a structured approach to building applications
+> Iterations: iteration is the process to repeat a particular snippet of code over and over again to perform a certain action.
+> Operand: term used to denote the objects which can be manipulated using different operators. ...Ex A + B here A and B are operands and + is operator.
+> Pacakages: package refers to a collection of related classes, modules, functions, and other resources that are grouped together for organization and reusability.  Packages are used to organize classes that belong to the same category or provide related functionality.
+> Runtime: Runtime or runtime is the time period during which a program is, in fact, running on a computer. If an operation occurs at ‘runtime’, it occurred when a program is running or the moment at which the program begins to run. 

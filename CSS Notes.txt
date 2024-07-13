@@ -1,0 +1,34 @@
+CSS:
+>  CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages.
+> Inline styles — Using the style attribute in the HTML start tag.
+> Embedded styles — Using the <style> element in the head section of a document.
+> External style sheets — Using the <link> element, pointing to an external CSS file. (Need to create a new file with css extension) / The @import rule is another way of loading an external style sheet. The @import statement instructs the browser to load an external style sheet and use its styles. (But Import is not recommended).
+> Selector: Selector specifies which element or elements in the HTML page the CSS rule applies to. It is used to style the required elements.
+> The background property is a shorthand property for setting all the individual background properties, i.e., background-color, background-image, background-repeat, background-attachment and the background-position property at once.
+> Types of selector: ID, Element, Class, Contextual, Attribute and Psuedo. 
+   ID: It is denoted by " # ".
+   Element: Used to style the element.
+   Class: used to style particular element. It is denoted by " . "
+   Contextual: Used to style elemnt which is present within another element.   
+   Ex: <div>
+     <span>Span Element</span>     --> div span
+      </div>
+   Attribute: used to style based on the attribute.
+              Ex: input[type="checkbox"]
+			  {
+			  }
+> Additional Selector:
+   ID: Used to select ID element.
+   Relational : 1) Child : It is used to select the elements of the mentioned element. It is denoted by " > ". Ex: Div>p.
+                2) Adjacent: It helps in targetting adjacent sibling elements. It is denoted by " + ". Ex: Div+p.
+				3) General : It is used to include all the elements coming after mentioned element. It is denoted by " ~ ". Ex: Div~p.
+   Grouping: Used to group element to apply the req style.
+   Pseudo classes: They are used to style HTML element based on their state.
+   Pseudo element: It helps in targetting specific element. It is denoted by " :: ".
+                     Ex: <p> This is CSS </p>
+					  
+					 CSS: p::first-letter {
+					          font-size = 32px;
+							   }
+	
+				

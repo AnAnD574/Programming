@@ -1,0 +1,147 @@
+Javascript:
+> Javascript virtual machine is an engine present in browser which will interpret the JS code and execuet it.
+> every browser has its own JVM...chrome has v8...edge has chakra
+>Scripts are code which can be executed without compiling
+> client side scripting is a process in which scripts (set of instructions) are executed by browsers without connecting the server. The code executes on the browser of client’s computer either during the loading of web page or after the web page has been loaded. Mainly used for dynamic user interface elements, such as pull-down menus, navigation tools, animation buttons, data validation purpose. The script files are sent to the client machine from the web server (or severs) when they are requested. The client’s web browser executes the script, then displays the web page, including any visible output from the script
+>JS can be used for server side pgmimg (can exist outside broswer also). Node is an evn whixh used V8 javascript engine outside browser env.
+> The <script> element can be placed in the <head> or <body> section. But it is better if it is placed at the end of the body section, just before closing the tag. The web page will load faster.
+
+> Variables: Used to store data. (ES6 introduces two new keywords "LET  and "CONST" for defining variables. CONST value cannot be changed). Default variables of js in undefined.
+>  Alert: To display the message or output data to the user. An alert dialog box is createdusing the alert() method.
+
+Output for the browser window"
+> use the document.write() method to write the content to the current document only while that document is being parsed.
+> If you use the document.write() method method after the page has been loaded, it will overwrite all the existing content in that document.
+> Console.log: Shows output in console.
+> Document.write: Shows output in browser page.
+
+DataTypes:
+>There are six basic data types in JavaScript which can be divided into three main categories: primitive (or primary), composite (or reference), and special data types. String, Number, and Boolean are primitive data types. Object, Array, and Function (which are all types of objects) are composite data types. Whereas Undefined and Null are special data types.Primitive data types can hold only one value at a time, whereas composite data types can hold collections of values and more complex entities.
+  
+  1) String: String values can be created using ' or ''. Used to represent textual. (You can use quotes inside a string, as long as they don't match the quotes surrounding the string. However, you can still use single quotes inside a single quoted strings or double quotes inside double quoted strings by escaping the quotes with a backslash character (\)
+  2) Number: Used to represent both integer and float. Evn exponential.
+  3) Boolean: True or false. It also comes as by comparing two things.
+  4) Undefined: If the variable is declared but has not be assigned..then it will have value undefined.
+  5) Null: It means that there is no value. It is not equivalent to empty string or 0.
+  6) Object: Allows u to store collections of data.An object contains properties, defined as a key-value pair. A property key (name) is always a string, but the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, function and other objects.
+  7) Array: array is a type of object used for storing multiple values in single variable. Each value (also called an element) in an array has a numeric position, known as its index, and it may contain data of any data type-numbers, strings, booleans, functions, objects, and even other arrays.
+  8) Function: function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables
+         Paramter: Mentioned while declaring function.
+		 Arguement: Value supplied for the parameter
+       I) Declarative approach: function name(parameter){
+	                             // function body }
+	  II) Anonymous approach: Passing function as a parameter to another function
+	                            function (parameter){
+								//function body }
+								
+> Typeof operator: The typeof operator can be used to find out what type of data a variable or operand contains. It can be used with or without parentheses (typeof(x) or typeof x).
+> Operators: 1) Arithmetic : Arithmetic operations
+             2) Assignment : Assigning ( =, +=, -=.....)
+			 3) String : Concatenation (+) , concatenation and assignment (+=)
+			 4) Incremental and decremental : ++, --...
+			 5) Logical Operator: Used to combine conditional stmts. &&, ||, !
+			 6) Comparision : Used to compare 2 values in boolean fashion. ( ==, ===, !=, !==, >, <, >=, <=)
+			 
+> Events: An event is something that happens when user interact with the web page.
+          When an event occur, you can use a JavaScript event handler (or an event listener) to detect them and perform specific task or set of tasks. By convention, the names for event handlers always begin with the word "on", so an event handler for the click event is called onclick, similarly an event handler for the load event is called onload, event handler for the blur event is called onblur, and so on.Types of events are mouse events, keyboard events, form events and document/window events.
+		  1) Mouse events: triggered when the user click some element, move the mouse pointer over an element
+		      i) Onclick: occurs when a user clicks on an element on a web page. Often, these are form elements and links. You can handle a click event with an onclick event handler.
+		      ii)Contextmenu events: occurs when a user clicks the right mouse button on an element to open a context menu. You can handle a contextmenu event with an oncontextmenu event handler. 
+			  iii) Mouseover: occurs when a user moves the mouse pointer over an element. You can handle the mouseover event with the onmouseover event handler.
+			  iv) Mouseout: occurs when a user moves the mouse pointer outside of an element. You can handle the mouseout event with the onmouseout event handler.
+			  
+		  2) Keyboard Event: is fired when the user press or release a key on the keyboard	(Not too much required)
+		  
+		  3) Form events: is fired when a form control receive or loses focus or when the user modify a form control value such as by typing text in a text input, select any option in a select box 
+		      i) Focus event: Focus event occurs when the user gives focus to an element on a web page. You can handle the focus event with the onfocus event handler.
+			  ii) Blur : blur event occurs when the user takes the focus away from a form element or a window.You can handle the blur event with the onblur event handler
+			  iii) Change: occurs when a user changes the value of a form element.You can handle the change event with the onchange event handler.
+			  iv) Submit: only occurs when the user submits a form on a web page. You can handle the submit event with the onsubmit event handler. 
+			
+		  4) Document/ Window events: Events are also triggered in situations when the page has loaded or when user resize the browser window.
+		     i) Onload: occurs when a web page has finished loading in the web browser. You can handle the load event with the onload event handler
+			 ii) Unload: unload event occurs when a user leaves the current web page. You can handle the unload event with the onunload event handler
+
+> Strings: String values can be created using ' or ''. Used to represent textual. (You can use quotes inside a string, as long as they don't match the quotes surrounding the string. However, you can still use single quotes inside a single quoted strings or double quotes inside double quoted strings by escaping the quotes with a backslash character (\)
+
+Performing operations on string:  Yes, that's correct. In JavaScript, primitive data types such as strings, numbers, and booleans are not objects, but they can be treated like objects when accessed with the property access notation (dot ntotation)
+
+1) Getting the Length of a String: The length property returns the length of the string, which is the number of characters contained in the string.
+2) Finding a string inside other string: can use the indexOf() method to find a substring or string within another string. This method returns the index or position of the first occurrence of a specified string within a string 
+  Similarly, you can use the lastIndexOf() method to get the index or position of the last occurrence of the specified string within a string
+3) Searching for a pattern inside string:  Use the search() method to search a particular piece of text or pattern inside a string.
+  The /i flag is used in the regular expression to ignore the case of the letters. 
+4) Extracting a Substring from a String: You can use the slice() method to extract a part or substring from a string. This method takes 2 parameters: start index (index at which to begin extraction), and an optional end index (index before which to end extraction), like str.slice(startIndex, endIndex).
+5) Replacing the Contents of a String: You can use the replace() method to replace part of a string with another string. This method takes two parameters a regular expression to match or substring to be replaced and a replacement string, like str.replace(regexp|substr, newSubstr).
+
+There are some more strings operation ..but its not that imp.
+> Escape characters: Escape sequences are also useful for situations where you want to use characters that can't be typed using a keyboard. Here are some other most commonly used escape sequences.
+\n is replaced by the newline character
+\t is replaced by the tab character
+
+> Numbers: Basic operations
+
+> Conditional statments:
+i) If statment: The if statement is used to execute a block of code only if the specified condition evaluates to true.
+ii) If else: statement allows you to execute one block of code if the specified condition is evaluates to true and another block of code if it is evaluates to false
+iii) If else if else: For multiple conditions.
+iv) Switch case: switch..case statement is an alternative to the if...else if...else statement, which does almost the same thing. The switch...case statement tests a variable or expression against a series of values until it finds a match, and then executes the block of code corresponding to that match. 
+
+> Ternary operator: The ternary operator provides a shorthand way of writing the if...else statements. The ternary operator is represented by the question mark (?) symbol and it takes three operands: a condition to check, a result for true, and a result for false
+
+> Arrays:Arrays are complex variables that allow us to store more than one value or a group of values under a single variable name.
+ length property is used to get the length of the array.
+ Looping through array elements: We can use forlop to access each element of array in sequential order.
+ Adding new elements in th array by push().
+ Removing Elements from an Array: To remove the last element from an array you can use the pop() method. 
+ There are similar methods like above ...u can google when u want it
+ 
+> Loops: Loops are used to execute the same block of code again and again, as long as a certain condition is met.
+
+There are mainly two types of loops:
+
+Entry Controlled loops: In these types of loops, the test condition is tested before entering the loop body. For Loops and While Loops are entry-controlled loops.
+Exit Controlled loops: In these types of loops the test condition is tested or evaluated at the end of the loop body. Therefore, the loop body will execute at least once, irrespective of whether the test condition is true or false. The do-while loop is exit controlled loop. 
+
+ i) For loop: The for loop repeats a block of code as long as a certain condition is met. It is typically used to execute a block of code for certain number of times.
+       for(initialization; condition; increment) {
+    // Code to be executed
+}
+ ii) For in loop:  type of a loop that iterates over the properties of an object, or the elements of an array.
+              for(variable in object) {
+    // Code to be executed
+}
+ iii) For of loop: ES6 introduces a new for-of loop which allows us to iterate over arrays or other iterable objects (e.g. strings) very easily. Also, the code inside the loop is executed for each element of the iterable object.
+ 
+ 
+ iv) While loop:  iterates the elements for the infinite number of times. It should be used if number of iteration is not known. (The cndn should fail at some time ..otherwise it will be infinite loop)
+ while (condition)  
+{  
+    code to be executed  
+}  
+ v) Do -while loop: It is similar to while loop ..only difference is the loop body will be executed once irrespective of the condition i.e it checks for the condition after executing the loop body.
+ do
+{
+    statements..
+}
+while (condition);
+
+> Functions: JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code. JavaScript functions are used to perform operations. We can call JavaScript function many times to reuse the code.
+1) Defining and calling a function: The declaration of a function start with the function keyword, followed by the name of the function you want to create, followed by parentheses i.e. () and finally place your function's code between curly brackets {}
+      function functionName() {
+    // Code to be executed
+}
+
+2) Adding parameter to function: You can specify parameters when you define your function to accept input values at run time. The parameters work like placeholder variables within a function; they're replaced at run time by the values (known as argument) provided to the function at the time of invocation.
+function functionName(parameter1, parameter2, parameter3) {
+    // Code to be executed
+}
+
+3) Returning values from a function: A function can return a value back to the script that called the function as a result using the return statement.
+
+4) Variable scopes: Local variable (Declared inside the function..cannot be accessed outside the function)...Local variables.
+
+
+OOPS:
+Encapsulation, Inheritance, Abstraction and Polymorphism
+A JavaScript object is just a collection of named values. These named values are usually referred to as properties of the object. 

@@ -1,0 +1,17 @@
+Angular JS:
+
+> Model: Which is our data ...in js it can be variable name:
+> View: HTML ...which user can view 
+> The model and view are bound by controllers, view model. 
+> So basically frameworks are used to bind model to view (DOM)
+
+Fundamental HTML:
+Custom Attributes: ng..data-ng
+
+Modules, apps and controllers:
+> MOdules are created to avoid collision between diff codes. It will be applicable to that particular code.
+> Controller ..controls only specific part of DOM.
+
+Dependency injections:
+
+

@@ -1,0 +1,32 @@
+> Object: It is a thing that u want to store and process the data. Another name for object is entity. Instance of a class
+> Class: Is a template for creating a object. It is used to define attributes and operations of the object.
+> Attributes: It is used to describe the object. They are knows as fields/properties.
+> Operations: Are perfomance than can be done by object. They are known as behavious/methods.
+> Methods are programs that are coded within the class as procedures or functions.
+> Creating object from a class is called Instantiation.
+> The properties that are assigned to a object are knows as state of a object
+> It is also possible to assign properties while the object is created. (Constructor method by using "New" keyword)
+
+4 pillars: Encapsulation, Abstraction, Inheritance and Polymorphism.
+
+
+Encapsulation:  encapsulation is a fundamental principle that involves bundling data and the methods. hides internal representation or state of an object from the outside.
+i) Data hiding: Encapsulation allows you to hide the internal details and implementation of an object from external entities. The internal data of an object is typically marked as private or protected, meaning it cannot be accessed or modified directly from outside the object. Instead, external interactions with the object are performed through public methods or interfaces, which provide controlled access to the internal data.
+ii) Data protection: By encapsulating data within an object, you can enforce data integrity and protect it from unintended or unauthorized modifications. The object's methods can apply validation, business rules, and access restrictions to ensure that the data remains consistent and valid.
+iii) Code organization and modularity: Encapsulation promotes modular design by grouping related data and behavior into cohesive units (objects).
+iv) Code reusability: Encapsulated objects can be easily reused in different parts of a program or in other projects. Since the object's implementation details are hidden, external code can interact with the object solely through its public interface. This allows objects to be treated as black boxes, simplifying their usage and promoting code reuse.
+
+Inheritance:  is a mechanism that allows a class to inherit properties and methods from another class, known as the superclass or base class. 
+The subclass inherits all the characteristics (attributes and behaviors) of the superclass, and it can also add its own unique characteristics or override the inherited ones.
+Key concepts:
+i) Superclass/Base class: It defines common attributes and behaviours that can be accessed by multiple subclass.
+ii) Subclass/Derived class: 
+> In oops we group related functions and variables in a unit. This unit is called objetcs. The variables are called as property and functions as method.
+> Grouping related variables and functions are called as Encapsulation. It reduces complexity and increases reusability.
+> Abstraction shows only necessary info and hides uneccesary info. It will have simpler interface as it does not show everything. Reduce the impact of change (The changes done in inner place will not have impact on outer representation)
+> Inheritance is a mechanism to eliminate redundancy of code.
+>Polymorphism: Some code or operation or objetcs behave differently in different context.
+  Polymorphism can be divided into runtime and compile time
+  i) Runtime -> Virtual functions (Function overloading)
+  ii) Compile time --> a) Method overloading (Multiple functions with same name but diff parameters)
+                       b) Operator overloading

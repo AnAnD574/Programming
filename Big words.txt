@@ -1,0 +1,2 @@
+Cipher Text: Ciphertext is encrypted text transformed from plaintext using an encryption algorithm. Ciphertext can't be read until it has been converted into  plaintext (decrypted) with a key.
+Obfuscation: Used to hide business logic.

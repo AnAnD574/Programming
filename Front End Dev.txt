@@ -1,0 +1,14 @@
+Roadmap to become Front End Developer in 120 days: 2-3 hrs daily
+
+Days
+
+1 - 12 : HTML
+12 - 30 : CSS
+31 - 46 : Javascript Basics
+47 - 51 : Responsive Web Design
+52 - 84 : Javascript Advance
+85 - 109 : React
+110 - 120 : GIT
+
+
+

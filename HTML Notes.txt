@@ -1,0 +1,4 @@
+HTML:
+> Attributes: attributes are special words which provide additional information about the elements or attributes are the modifier of the HTML element
+> div: 
+> Information that is reusable should be kept in a class and information that is totally unique should be kept in an ID. 

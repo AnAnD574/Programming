@@ -1,0 +1,232 @@
+
+JS STRING METHODS:
+
+> Slice() and substring() are same ..except slice can take negative indices.  Syntax : (start indices, end indices)
+> substr same as slice ..differ in syntax : (start indices, length)
+> parseInt is used to convert to number
+
+ARRAYS:
+
+> It is a common practice to declare arrays with the const keyword.
+> One way to loop through array is "For loop" and other is forEach() method.
+> Push() used to add array elements. We can also use length to add elements in the array, but if we initialize it to hihest index than the elements present in the array ..it will create hole.
+> JS does not support associative indices (named indexes)
+> Avoid using new Array()...instead use const arr = []
+
+i) Array Methods:
+   Basic Array methods:
+> at() returns an indexed element from an array. It is same as [] i.e cars[3].
+> join() it joins all elemets of arrays into a string ...same as toString(). But we can also add separator which is not possible in toString().
+> Pop() removes  the last element of the array. The pop() method returns the value that was "popped out".
+> The push() method returns the new array length. Refer w3school for example.
+> shift() removes the first element of the array. The shift() method returns the value that was "shifted out"
+> unshift() add the element to 0th index and moves other up.The unshift() method returns the new array length.
+> Using delete() leaves undefined holes in the array. Use pop() or shift() instead.
+> copyWithin()copies array elements to another position in an array, overwriting existing values:
+  Syntax copyWitin(2,0): Copy to index 2, all elements from index 0
+> splice() method is used to add new items in the array.
+   splice(x,y.....)  --> x denotes the position where new elements has to be added 	
+                         y denotes how many elements has to be removed.
+                          The rest of the parameter denotes the elements to be added
+> toSpliced() method is same as splice() but it wont change the original array. We can create a new array and initialize it to this method.
+> slice() method is used to slice a piece of an array into new arrays
+
+ii) Array Search:
+> indexOf() gives the position of the array item and lastIndexOf() givces the postion of the last occurnce of the specified element.
+
+iii) Sorting Arrays:	
+> sort() used  to sort arrays alphabetically
+> reverse() reverses the array.
+> By combining these 2 we can sort arrays in descending order
+> toReversed() this also reversed the array ..but the differnce between this and reverse is ..this does not change the original array. Similar way is toSort(). 
+> Sort() can be used only on strings. For number we use comparisions
+
+iv) Array Iteration:
+>forEach() will be called for each element of the array.
+>map() creates a new array by performing function on each element
+>filter() creates new array with array elements that passes the test
+>with() safest way to update without altering original array
+
+v) Array Const:
+>Its a block scope.
+
+COMPARISIONS:
+
+> Nullish (??): Returns the first arguement if it's not null or undefined. Otherwise it will return the second arguement.
+> Optional Chaining operator(?.): Returns undefined if an object is undefined or null.
+
+CONDITIONAL STATEMENTS:
+
+>if, else, elseif, 
+>switch: switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+} 
+
+LOOPS:
+
+i)FOR: loops through a block of code a number of times
+     for(expression1, expression2, expression3){ 
+        //code block
+       } 
+>The expressions are optional
+>Normally you will use expression 1 to initialize the variable used in the loop (let i = 0). We can initialize before also.
+>expression 2 is used to evaluate the condition of the initial variable.If expression 2 returns true, the loop will start over again. If it returns false, the loop will end.
+>If you omit expression 2, you must provide a break inside the loop. Otherwise the loop will never end.
+>Expression 3 can also be omitted (like when you increment your values inside the loop):
+
+ii)FOR IN: loops through the properties of an object
+         for (key in object) {
+			// code block to be executed
+			}
+> for in is not recommended for arrays. We can use forEach().
+
+iii) FOR OF: loops through the values of an iterable object.It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more
+      for (variable of iterable) {
+		// code block to be executed
+		}
+		variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+		iterable - An object that has iterable properties.
+
+iv) WHILE LOOP: loops through a block of code while a specified condition is true
+		while (condition) {
+		// code block to be executed
+		}
+>If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.
+
+v) DO WHILE LOOP: will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+		do {
+		// code block to be executed
+		}
+		while (condition);
+		
+BREAK AND CONTINUE:
+> The break statement "jumps out" of a loop.
+> The continue statement "jumps over" one iteration in the loop.
+
+TYPE CONVERSION:
+>Number() 	Returns a number, converted from its argument
+>parseFloat() 	Parses a string and returns a floating point number
+>parseInt() 	Parses a string and returns an integer
+>toFixed() 	Returns a string, with a number rounded and written with a specified number of decimals.
+>toPrecision() 	Returns a string, with a number written with a specified length
+
+REGULAR Expression:
+>A regular expression is a sequence of characters that forms a search pattern. The search pattern can be used for text search and text replace operations. 
+>search() method uses an expression to search for a match, and returns the position of the match.
+>The replace() method returns a modified string where the pattern is replaced.
+
+ERRORS:
+
+>TRY: The try statement allows you to define a block of code to be tested for errors while it is being executed.
+>CATCH: The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+>The JavaScript statements try and catch come in pairs.
+  try {
+  Block of code to try
+	}
+	catch(err) {
+  Block of code to handle errors
+	} 
+>The throw statement defines a custom error.
+> If you use throw together with try and catch, you can control program flow and generate custom error messages.
+> FINALLY: The finally statement lets you execute code, after try and catch, regardless of the result
+	try {
+	Block of code to try
+	}
+	catch(err) {
+	Block of code to handle errors
+	}
+	finally {
+	Block of code to be executed regardless of the try / catch result
+	} 
+	
+JS SCOPE:
+
+> Block scope: Let and const declared in {} cannot be accessed outside.
+> Local scope: Variables declared inside function.
+> Global: Variables declared outside the function
+
+HOISTING:
+
+>Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope 
+
+STRICT MODE:
+
+> The purpose of "use strict" is to indicate that the code should be executed in "strict mode". with strict mode, you can not, for example, use undeclared variables.
+
+> Explicit function binding:
+The call() and apply() methods are predefined JavaScript methods. They can both be used to call an object method with another object as argument.
+With the bind() method, an object can borrow a method from another object.
+
+CLASS:
+
+Use the keyword class to create a class.Always add a method named constructor().
+			class ClassName {
+			constructor() { ... }
+			}
+			
+MODULES:
+
+>JavaScript modules allow you to break up your code into separate files. Modules are imported from external files with the import statement.
+>Modules only work with the HTTP(s) protocol.
+> We can import from other js
+
+JSON:
+
+>JSON is a lightweight data interchange format
+{
+"employees":[
+  {"firstName":"John", "lastName":"Doe"},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+>JSON.Parse() to convert js string into js object
+
+OBJECTS:
+> A primitive value is a value that has no properties or methods.
+> Primitive datatypes: string, number, boolean, null, undefined, symbol, bigint
+> Methods are the actions that can be performed on the object. An object method is an object property containing a function definition.
+>Objects are mutable: They are addressed by reference, not by value.
+>Any JavaScript object can be stringified (converted to a string) with the JavaScript function JSON.stringify()
+> Getters: Get is used to get the value of the property.
+> Setters: Set is used to set the value of the property.
+
+
+FUNCTIONS:
+> Function parameters are the names listed in the function definition. Function arguments are the real values passed to (and received by) the function.
+> call()/apply() we can write method that can be used on diff objects.The call() method takes arguments separately. The apply() method takes arguments as an array.
+>With the bind() method, an object can borrow a method from another object.
+
+CLASSES:
+
+>Class Inheritance:To create a class inheritance, use the extends keyword. A class created with a class inheritance inherits all the methods from another class.
+>The super() method refers to the parent class.
+>By calling the super() method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.
+
+JS ASYNC:
+
+>JavaScript functions are executed in the sequence they are called. Not in the sequence they are defined.
+>Functions running in parallel with other functions are called asynchronous
+
+JS HTML DOMS:
+
+> With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+HTML DOM methods are actions you can perform (on HTML Elements).
+HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+Data validation:
+> Server side validation is performed by a web server, after input has been sent to the server.
+> Client side validation is performed by a web browser, before input is sent to a web server.
+
+WEB API:
+A Browser API can extend the functionality of a web browser.
+A Server API can extend the functionality of a web server.
+
+
